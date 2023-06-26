@@ -36,19 +36,19 @@ public class MainActivity extends AppCompatActivity {
 
                 _id = _idEditText.getText().toString();
                 _password = _passwordEditText.getText().toString();
-                _url = "http://tonywijaya.000webhostapp.com/011100862/login.php?id=" + _id + "&password=" + _password;
+                _url = "https://stmikpontianak.net/011100862/login.php?id=" + _id + "&password=" + _password;
 
                 asyncHttpClient = new AsyncHttpClient();
                 asyncHttpClient.get(_url, new AsyncHttpResponseHandler() {
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                        String hasil = new String();
-                        Toast.makeText(getApplicationContext(), new String(responseBody), Toast.LENGTH_SHORT).show();
+                        String hasil = new String(responseBody);
+//                        Toast.makeText(getApplicationContext(), new String(responseBody), Toast.LENGTH_SHORT).show();
 
-//                        if (!hasil.equals("[{\"idCount\":\"1\"}]")) {
-//                            Toast.makeText(getApplicationContext(), "ID dan Password anda tidak cocok.", Toast.LENGTH_SHORT).show();
-//                            return;
-//                        }
+                        if (!hasil.equals("[{\"idCount\":\"1\"}]")) {
+                            Toast.makeText(getApplicationContext(), "ID dan Password anda tidak cocok.", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
 
                         Toast.makeText(getApplicationContext(), "Selamat datang, " + _id, Toast.LENGTH_SHORT).show();
                         _menuIntent = new Intent(getApplicationContext(), MenuActivity.class);
