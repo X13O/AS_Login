@@ -22,5 +22,37 @@
         android:background="@android:color/transparent"
         android:drawableLeft="@drawable/student"
         android:textColor="#fff"
-        android:text="Master Mahasiswa"/>
+        android:text="Master Mahasiswa"
+        android:id="@+id/mahasiswaButton"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/hotel"
+        android:textColor="#fff"
+        android:text="Hotel App"
+        android:id="@+id/hotelButton"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/forex"
+        android:textColor="#fff"
+        android:text="Forex App"
+        android:id="@+id/forexButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/cuaca"
+        android:textColor="#fff"
+        android:text="Weather App"
+        android:id="@+id/cuacaButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
 </GridLayout>

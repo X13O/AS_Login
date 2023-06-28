@@ -15,6 +15,21 @@
         android:theme="@style/Theme.Login"
         tools:targetApi="31">
         <activity
+            android:name=".CuacaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForexActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HotelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MahasiswaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddMahasiswaActivity"
+            android:exported="false" />
+        <activity
             android:name=".MenuActivity"
             android:exported="false" />
         <activity
