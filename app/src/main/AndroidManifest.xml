@@ -16,19 +16,19 @@
         tools:targetApi="31">
         <activity
             android:name=".CuacaActivity"
-            android:exported="false" />
+            android:label="Weather App"/>
         <activity
             android:name=".ForexActivity"
-            android:exported="false" />
+            android:label="Forex App"/>
         <activity
             android:name=".HotelActivity"
-            android:exported="false" />
+            android:label="Hotel App"/>
         <activity
             android:name=".MahasiswaActivity"
-            android:exported="false" />
+            android:label="Mahasiswa App"/>
         <activity
             android:name=".AddMahasiswaActivity"
-            android:exported="false" />
+            android:label="Tambah Mahasiswa App"/>
         <activity
             android:name=".MenuActivity"
             android:exported="false" />

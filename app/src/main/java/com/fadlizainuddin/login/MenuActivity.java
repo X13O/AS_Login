@@ -31,10 +31,11 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        _mahasiswaButton = findViewById(R.id.mahasiswaButton);
         _hotelButton = findViewById(R.id.hotelButton);
         _forexButton = findViewById(R.id.forexButton);
         _cuacaButton = findViewById(R.id.cuacaButton);
+        _mahasiswaButton = findViewById(R.id.mahasiswaButton);
+
         _mahasiswaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -75,14 +76,14 @@ public class MenuActivity extends AppCompatActivity {
                 asyncHttpClient.get(url, new AsyncHttpResponseHandler() {
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                        Toast.makeText(getApplicationContext(), "Menu Forex App ", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Menu Forex App 202102266 Fadli Zainuddin", Toast.LENGTH_SHORT).show();
                         _menuIntent = new Intent(getApplicationContext(), ForexActivity.class);
                         startActivity(_menuIntent);
                     }
 
                     @Override
                     public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                        Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
+
                     }
                 });
             }
@@ -96,7 +97,7 @@ public class MenuActivity extends AppCompatActivity {
                 asyncHttpClient.get(url, new AsyncHttpResponseHandler() {
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                        Toast.makeText(getApplicationContext(), "Menu Weather App ", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Menu Weather App 202102266 Fadli Zainuddin", Toast.LENGTH_SHORT).show();
                         _menuIntent = new Intent(getApplicationContext(), CuacaActivity.class);
                         startActivity(_menuIntent);
                     }
